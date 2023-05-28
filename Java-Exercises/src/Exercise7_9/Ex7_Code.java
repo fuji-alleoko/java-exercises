@@ -1,4 +1,4 @@
-package Exercise7;
+package Exercise7_9;
 
 import java.sql.Connection;
 import java.sql.Date;
@@ -7,33 +7,14 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class Ex7_Code {
 	private static String url = "jdbc:postgresql://localhost:5432/mydatabase";
 	private static String username = "postgres";
 	private static String password = "root";
 
 	public static void main(String[] args) {
-		startApp();
+		getDataByCode();
 
-	}
-	private static void startApp() {
-		Scanner input = new Scanner(System.in);
-		System.out.println("Select a process\n  1: Exercise 7 (Display Info of Code)\n  2: Exercise 8 (Display all list by region)\n  3: Exercise 9 (Update Unit Cost)");
-		int userInput = input.nextInt();
-		
-		switch (userInput) {
-		case 1: {
-			getDataByCode();
-			break;
-		}case 2:{
-			getAllDataByRegion();
-			break;
-		}case 3:{
-			updateData();
-			break;
-		}default:
-			System.out.println("Invalid input");
-		}
 	}
 
 	// Exercise 7
@@ -48,7 +29,8 @@ public class Main {
 			// View all by region tables
 			List<Table> allTables = tableController.getTableByCode(code);
 			 System.out.println("Code\tDate\t\tRegion\t\tRep\t\tItem\t\tUnits\t\tUnit Cost\tTotal");
-		
+			 System.out.println("========================================================================================================================");
+				
 			for (Table table : allTables) {
 			
 				
@@ -72,6 +54,169 @@ public class Main {
 		}
 
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	private static void startApp() {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Select a process\n  1: Exercise 7 (Display Info of Code)\n  2: Exercise 8 (Display all list by region)\n  3: Exercise 9 (Update Unit Cost)");
+		int userInput = input.nextInt();
+		
+		switch (userInput) {
+		case 1: {
+			getDataByCode();
+			break;
+		}case 2:{
+			getAllDataByRegion();
+			break;
+		}case 3:{
+			updateData();
+			break;
+		}default:
+			System.out.println("Invalid input");
+		}
+	}
+
+	
+	
+	
 	
 
 	// Exercise 8
@@ -149,50 +294,6 @@ public class Main {
 
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	

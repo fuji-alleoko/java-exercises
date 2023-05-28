@@ -1,4 +1,4 @@
-package Exercise7;
+package Exercise7_9;
 
 import java.sql.*;
 import java.util.List;
