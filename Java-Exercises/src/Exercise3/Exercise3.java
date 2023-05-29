@@ -12,7 +12,7 @@ public class Exercise3 {
 		
 		private static void getDensityVolumeMass() {
 
-			System.out.println("*****  Computation of Density  *****");
+			System.out.println("  Computation of Density");
 			Scanner inputScannerProcess = new Scanner(System.in);
 
 			
